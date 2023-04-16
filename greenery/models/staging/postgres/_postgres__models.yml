@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_postgres__users
+    description: basic information about greenery users
+  - name: stg_postgres__addresses
+    description: geographic information about greenery users
+  - name: stg_postgres__events
+    description: website event information
+  - name: stg_postgres__orders
+    description: order status, cost and shipping information
+  - name: stg_postgres__products
+    description: inventory information
+  - name: stg_postgres__order_items
+    description: product and quantity information for orders
+  - name: stg_postgres__promos
+    description: discount/promotional information
