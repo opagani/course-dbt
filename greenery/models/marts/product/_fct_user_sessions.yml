@@ -1,0 +1,70 @@
+version: 2
+
+models:
+  - name: fct_user_sessions
+    columns:
+      - name: event_session_guid
+        description: "event_session_guid"
+        tests:
+          - unique
+          - not_null
+      - name: event_user_guid
+        description: "event_user_guid"
+        tests:
+          - unique
+          - not_null
+      - name: user_first_name
+        description: "user_first_name"
+        tests:
+          - unique
+          - not_null
+      - name: user_last_name
+        description: "user_last_name"
+        tests:
+          - unique
+          - not_null
+      - name: user_email
+        description: "user_email"
+        tests:
+          - unique
+          - not_null
+      - name: user_phone_number
+        description: "user_phone_number"
+        tests:
+          - unique
+          - not_null
+      - name: add_to_carts
+        description: "add_to_carts"
+        tests:
+          - unique
+          - not_null
+      - name: checkouts
+        description: "checkouts"
+        tests:
+          - unique
+          - not_null
+      - name: package_shippeds
+        description: "package_shippeds"
+        tests:
+          - unique
+          - not_null
+      - name: page_views
+        description: "page_views"
+        tests:
+          - unique
+          - not_null
+      - name: first_session_event
+        description: "first_session_event"
+        tests:
+          - unique
+          - not_null
+      - name: last_session_event
+        description: "last_session_event"
+        tests:
+          - unique
+          - not_null
+      - name: session_length_minutes
+        description: "session_length_minutes"
+        tests:
+          - unique
+          - not_null

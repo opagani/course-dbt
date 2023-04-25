@@ -1,21 +1,22 @@
 with source as (
+
     select * from {{ source('postgres', 'users')}}
+
 )
 
 , renamed_recast as (
+
     select
-        -- ids
-        user_id as users_guid
+        user_id as user_guid
+        , first_name as user_first_name
+        , last_name as user_last_name
+        , email as user_email
+        , phone_number as user_phone_number
+        , created_at::timestampntz as user_created_at_utc
+        , updated_at::timestampntz as user_updated_at_utc
         , address_id as address_guid
-        -- timestamps
-        , created_at as created_at_utc
-        , updated_at as updated_at_utc
-        -- users
-        , first_name
-        , last_name
-        , phone_number
-        , email
     from source
+
 )
 
 select * from renamed_recast
