@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fct_page_views
+    columns:
+      - name: event_product_guid
+        description: "event_product_guid"
+      - name: event_created_at_utc
+        description: "event_created_at_utc"
+      - name: page_views
+        description: "page_views"

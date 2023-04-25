@@ -12,9 +12,9 @@ with session_events_agg as (
 
 users as (
 
-    select *from {{ref("stg_postgres__users")}}
+    select * from {{ref("stg_postgres__users")}}
 
-),
+)
 
 select
     session_events_agg.event_session_guid

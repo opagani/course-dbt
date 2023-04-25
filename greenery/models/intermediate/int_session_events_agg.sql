@@ -8,6 +8,7 @@ with events as(
 
     select * from {{ref('stg_postgres__events')}}
 ),
+
 final as (
 
     select

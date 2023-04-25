@@ -4,17 +4,14 @@ with source as (
 
 , renamed_recast as (
     select
-        -- ids
         event_id as event_guid
-        , session_id as session_guid
-        , user_id as user_guid
-        , order_id as order_guid
-        , product_id as product_guid
-        -- timestamps
-        , created_at as created_at_utc
-        -- events
-        , page_url
+        , session_id as event_session_guid
+        , user_id as event_user_guid
         , event_type
+        , created_at as event_created_at_utc
+        , order_id as event_order_guid
+        , product_id as event_product_guid
+        , page_url
     from source
 )
 
