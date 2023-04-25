@@ -68,7 +68,7 @@ from
 
 #### 2. What are good indicators of a user who will likely purchase again? What about indicators of users who are likely NOT to purchase again? If you had more data, what features would you want to look into to answer this question?
 
-###### This is a hypothetical question vs. something we can analyze in our Greenery data set. Think about what exploratory analysis you would do to approach this question.
+###### This is a hypothetical question 
 
 Some hypothetical indicators of a user who will likely purchase again:
 - Look into percentage of customers that purchase two plus products as an indicator that they will be coming back
@@ -105,7 +105,7 @@ See [fct_page_views](https://github.com/opagani/course-dbt/blob/main/greenery/mo
 
 #### 6. Use the dbt docs to visualize your model DAGs
 
-![Week 2 DAG](https://8080-opagani-coursedbt-nlxy5eawo0m.ws-us95.gitpod.io/#!/overview?g_v=1 "Week 2 DAG")
+![Week 2 DAG](https://github.com/opagani/course-dbt/blob/main/greenery/images/oscar-pagani-dag-project2.png "Week 2 DAG")
 
 ### Part 2. Tests
 
