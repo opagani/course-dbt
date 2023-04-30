@@ -12,13 +12,10 @@ with events as (
     select * from {{ ref('stg_postgres__order_items')}}
 )
 
-, final as (
-    select
-        order_items.product_id
-        , count(distinct events.event_session_guid) as order_sessions
-    from events
-    left join order_items on events.event_order_guid = order_items.order_guid
-    group by 1
-)
-
-select * from final
+select
+    order_items.product_id
+    , count(distinct events.event_session_guid) as order_sessions
+from events
+left join order_items on events.event_order_guid = order_items.order_guid
+where events.event_order_guid is not null
+group by 1
