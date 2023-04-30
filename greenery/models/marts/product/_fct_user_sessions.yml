@@ -2,33 +2,46 @@ version: 2
 
 models:
   - name: fct_user_sessions
+    description: ""
     columns:
       - name: event_session_guid
-        description: "event_session_guid"
+        description: ""
+
+      - name: event_user_guid
+        description: ""
         tests:
           - unique
           - not_null
-      - name: event_user_guid
-        description: "event_user_guid"
+
       - name: user_first_name
-        description: "user_first_name"
+        description: ""
+
       - name: user_last_name
-        description: "user_last_name"
+        description: ""
+
       - name: user_email
-        description: "user_email"
+        description: ""
+
       - name: user_phone_number
-        description: "user_phone_number"
+        description: ""
+
       - name: add_to_carts
-        description: "add_to_carts"
+        description: ""
+
       - name: checkouts
-        description: "checkouts"
+        description: ""
+
       - name: package_shippeds
-        description: "package_shippeds"
+        description: ""
+
       - name: page_views
-        description: "page_views"
+        description: ""
+
       - name: first_session_event
-        description: "first_session_event"
+        description: ""
+
       - name: last_session_event
-        description: "last_session_event"
+        description: ""
+
       - name: session_length_minutes
-        description: "session_length_minutes"
+        description: ""
